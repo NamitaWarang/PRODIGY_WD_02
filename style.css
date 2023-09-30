@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+
+
+:root {
+    --primary-color: rgb(240, 76, 238);
+    --back: rgba(4, 4, 4, 0.759);
+    --buttonback: rgb(216, 216, 216);
+    --timeback: rgb(219, 216, 216);
+    --darker: rgb(5, 5, 5);
+    --text: rgb(8, 7, 7);
+    --buttonclick: rgb(59, 59, 59);
+}
+
+body {
+    background: var(--back);
+    color: var(--text);
+}
+
+.watch {
+    text-align: center;
+    background-color: var(--darker);
+    width: 100%;
+    max-width: 360px;
+    margin: 2rem auto;
+    margin-top: 12.5rem;
+    padding: 2rem 2rem;
+    border-radius: 6px;
+    justify-content: center;
+}
+
+.time {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    background-color: var(--timeback);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+.milliseconds {
+    font-size: 1.5rem;
+    margin-left: 0.2rem;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls button {
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    user-select: none;
+    /*text in button cannot be selected*/
+    font-size: 1.25rem;
+    cursor: pointer;
+    background-color: var(--buttonback);
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+
+    transition: 0.4s;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+button:active {
+    background-color: var(--buttonclick);
+    color: var(--buttonback);
+}
